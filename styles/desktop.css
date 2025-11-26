@@ -9,9 +9,21 @@
     align-items: center;
     justify-content: space-between;
     padding: 0px 20px;
+
+}
+.section-btn {
+    display: flex;
+    gap: 10px;
 }
 .btn-compte {
-    padding: 8px 16px;
+    padding: 8px 8px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius:4px ;
+}
+.btn-panier {
+    padding: 8px 8px;
     background-color: black;
     color: white;
     border: none;
@@ -21,4 +33,24 @@
     display: flex;
     justify-content: start;
     color: black;
+}
+.section-panier {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.section-compte{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.logo-panier{
+    height: 30px;
+    padding: auto;
+}
+.logo-profil{
+    height: 30px;
+    padding: auto;
 }
