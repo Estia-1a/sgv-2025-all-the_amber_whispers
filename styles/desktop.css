@@ -1,0 +1,17 @@
+:root {
+  --bg:#141414;
+  --card:#1f1f1f;
+  --accent:#3c09e5;
+  --muted:#b3b3b3;
+  --maxw:1200px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  font-family: Montserrat, system-ui, Arial;
+  color: #ffffff;
+}
