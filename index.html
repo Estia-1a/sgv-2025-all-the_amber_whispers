@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -7,35 +7,85 @@
     <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 768px)"> 
     <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 767px)"> 
     <title>Document</title>
-    <title>Barre de Recherche Simple</title>
-    <style>
-        /* Styles CSS pour la Barre de Recherche */
-
-        /* 1. Conteneur principal */
-        .simple-search-bar {
-            display: flex; /* Utilise Flexbox pour aligner l'input et le bouton */
-            max-width: 400px;
-            margin: 50px auto; /* Centre la barre sur la page */
-            border: 1px solid #ccc; /* Bordure légère */
-            border-radius: 5px; /* Coins arrondis */
-            overflow: hidden; /* Assure que les éléments internes respectent les coins arrondis */
-        }
-
-        
 </head>
 <body>
-    <div class="barre-haut">
-    <p class="texte-bienvenue">Bienvenue sur EstiaFlix</p>
-    <div class="section-btn">
-    <div class="section-panier">
-        <img src="media/pictures/panier.png" class="logo-panier">
-        <button class="btn-panier"> Panier </button>
-    </div>
-    <div class="section-compte"> 
-        <img src="media/pictures/profil.jpg" class="logo-profil">
-        <button class="btn-compte"> consulter mon compte </button>
-    </div>
-    </div>
-    </div>
+    <!-- Barre fixe en haut -->
+    <header class="barre-haut">
+        <p class="texte-bienvenue">Bienvenue sur EstiaFlix</p>
+        <div class="section-btn">
+            <div class="section-panier">
+                <img src="media/pictures/Panier" class="logo-panier"> 
+                <button class="btn-panier">Panier</button>
+            </div>
+            <div class="section-compte">
+                <img src="media/pictures/profil.jpg" class="logo-profil">
+                <button class="btn-compte">Compte</button>
+            </div>
+    </header>
+
+    <main class="corp">
+        <!-- Barre de recherche -->
+        <div class="barre-de-recherche">
+            <input type="text" class="recherche-media" placeholder="Rechercher un média...">
+        </div>
+
+        <!-- Section Magazines -->
+        <section class="genre-section">
+            <h2 class="titre-genre">Magazines</h2>
+            <div class="media-recommande">
+                <div class="media-card">
+                    
+                    <h3 class="titre-media">Magazine 1</h3>
+                    <p class="description-media">Description</p>
+                    <p class="info-media">Auteur</p>
+                </div>
+                <div class="media-card">
+                    <img src="media/pictures/magasine.jpg">
+                    <h3 class="titre-media">Magazine 2</h3>
+                    <p class="description-media">Description</p>
+                    <p class="info-media">Auteur</p>
+                </div>
+                <!-- Ajoute d'autres cartes si besoin -->
+            </div>
+        </section>
+
+        <!-- Section Podcasts -->
+        <section class="genre-section">
+            <h2 class="titre-genre">Podcasts</h2>
+            <div class="media-recommande">
+                <div class="media-card">
+                    <img src="media/pictures/magasine.jpg">
+                    <h3 class="titre-media">Podcast 1</h3>
+                    <p class="description-media">Description</p>
+                    <p class="info-media">Auteur</p>
+                </div>
+                <div class="media-card">
+                    <img src="media/pictures/magasine.jpg">
+                    <h3 class="titre-media">Podcast 2</h3>
+                    <p class="description-media">Description</p>
+                    <p class="info-media">Auteur</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Journaux -->
+        <section class="genre-section">
+            <h2 class="titre-genre">Journaux</h2>
+            <div class="media-recommande">
+                <div class="media-card">
+                    <img src="media/pictures/magasine.jpg">
+                    <h3 class="titre-media">Journal 1</h3>
+                    <p class="description-media">Description</p>
+                    <p class="info-media">Auteur</p>
+                </div>
+                <div class="media-card">
+                    <img src="media/pictures/magasine.jpg">
+                    <h3 class="titre-media">Journal 2</h3>
+                    <p class="description-media">Description</p>
+                    <p class="info-media">Auteur</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>

@@ -1,56 +1,164 @@
-.barre-haut {position: fixed;
+
+/* Reset */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Barre haute */
+.barre-haut {
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
     height: 70px;
-    background-color: rgb(250, 101, 78);
-    color:aqua ;
-    display:flex;
+    background-color: #4e96fa;
+    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 20px;
-
+    padding: 0 20px;
+    z-index: 1000;
 }
+
+.texte-bienvenue {
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
 .section-btn {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
-.btn-compte {
-    padding: 8px 8px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius:4px ;
-}
-.btn-panier {
-    padding: 8px 8px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius:4px ;
-}
-.texte-bienvenue {
-    display: flex;
-    justify-content: start;
-    color: black;
-}
+
 .section-panier {
     display: flex;
     flex-direction: column;
-    gap: 5px;
     align-items: center;
+    gap: 5px;
 }
-.section-compte{
+
+.section-compte {
     display: flex;
     flex-direction: column;
-    gap: 5px;
     align-items: center;
+    gap: 5px;
 }
-.logo-panier{
+
+.logo-panier {
     height: 30px;
-    padding: auto;
+    width: 30px;
+    border-radius: 50%;
 }
-.logo-profil{
+
+.logo-profil {
     height: 30px;
-    padding: auto;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.btn-panier {
+    padding: 6px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-compte {
+    padding: 6px 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* Corps */
+.corp {
+    padding-top: 100px;
+}
+
+/* Barre de recherche */
+.barre-de-recherche {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.recherche-media {
+    width: 50%;
+    height: 40px;
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    text-align: center;
+}
+
+/* Sections */
+.genre-section {
+    margin-bottom: 40px;
+}
+
+.titre-genre {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Cartes médias */
+.media-recommande {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.media-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.media-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.media-card img {
+    width: 100%;
+    max-height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.titre-media {
+    margin: 5px 0;
+    color: #555;
+}
+
+.description-media {
+    margin: 5px 0;
+    color: #555;
+}
+
+.info-media {
+    margin: 5px 0;
+    color: #555;
 }
