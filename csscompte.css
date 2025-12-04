@@ -20,6 +20,10 @@ html, body {
   padding:0 20px;
 }
 
+<<<<<<< HEAD
+=======
+/* NAV (repris) */
+>>>>>>> Victor
 nav {
   position:fixed;
   top:0; left:0; right:0;
@@ -46,6 +50,10 @@ nav {
   text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+/* Grille des boutons */
+>>>>>>> Victor
 .buttons-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
