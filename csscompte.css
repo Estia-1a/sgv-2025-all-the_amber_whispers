@@ -1,0 +1,39 @@
+
+:root {
+  --bg:#141414;
+  --card:#1f1f1f;
+  --accent:#0965e5;
+  --muted:#b3b3b3;
+  --maxw:1200px;
+}
+
+html, body {
+  margin:0;
+  background:var(--bg);
+  font-family:Montserrat, system-ui, Arial;
+  color:#fff;
+}
+
+.container {
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:0 20px;
+}
+
+/* NAV (repris) */
+nav {
+  position:fixed;
+  top:0; left:0; right:0;
+  height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 30px;
+  backdrop-filter:blur(6px);
+  z-index:40;
+}
+.nav-left { display:flex; align-items:center; gap:24px; }
+.logo { font-weight:700; color:var(--accent); font-size:22px; }
+.nav-links a { color:#fff; text-decoration:none; margin-right:16px; font-weight:500; }
+
+
