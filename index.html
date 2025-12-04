@@ -14,18 +14,21 @@
         <div class="nav-left container">
             <div class="logo">EstiaFlix</div>
             <div class="nav-links">
-                <a href="#">Accueil</a>
+                <a href="#" class="active">Accueil</a>
                 <a href="#">Journaux</a>
                 <a href="#">Documentaires</a>
                 <a href="#">Nouveautés</a>
                 <a href="#">Podcast</a>
             </div>
         </div>
-        <form action="/search" method="GET" role="search" class="search-form">
-            <label for="search" class="sr-only">Rechercher sur EstiaFlix</label>
-            <input id="search" name="q" type="search" placeholder="Recherche" aria-label="Recherche">
-            <button type="submit">Rechercher</button>
-        </form>
+        
+        <div class="nav-right">
+             <form action="/search" method="GET" role="search" class="search-form">
+                <label for="search" class="sr-only">Rechercher sur EstiaFlix</label>
+                <input id="search" name="q" type="search" placeholder="Recherche" aria-label="Recherche">
+            </form>
+            <button class="btn-compte">Profil</button>
+        </div>
     </nav>
 
     <section class="hero">
@@ -46,28 +49,12 @@
             <div class="row-track">
                 
                 <article class="card">
-                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=50&w=500" alt="Image représentant le journalisme, un thème tendance.">
+                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=50&w=500" alt="Journaliste devant des caméras">
                     <div class="play-overlay">
                         <div class="play-icon">▶</div>
                     </div>
-                    </article>
-                
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=50&w=500" alt="Image d'un micro pour un podcast ou une interview.">
-                    <div class="play-overlay">
-                        <div class="play-icon">▶</div>
-                    </div>
+                    <span class="metadata-badge">25</span> 
                 </article>
                 
                 <article class="card">
-                    <img src="https://images.unsplash.com/photo-1615310126233-642c6a0df67a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=50&w=500" alt="Photo d'un studio d'enregistrement de film/documentaire.">
-                    <div class="play-overlay">
-                        <div class="play-icon">▶</div>
-                    </div>
-                </article>
-                
-            </div>
-        </div>
-    </section>
-</body>
-</html>
+                    <img src="
