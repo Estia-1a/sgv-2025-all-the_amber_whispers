@@ -1,53 +1,73 @@
-
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
-  <title>Accueil — EstiaFlix</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/desktop.css">
+    <title>Accueil — EstiaFlix</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/desktop.css">
 </head>
 <body>
 
-  <nav>
-    <div class="nav-left container">
-      <div class="logo">EstiaFlix</div>
-      <div class="nav-links">
-        <a href="#">Accueil</a>
-        <a href="#">Journaux</a>
-        <a href="#">Documentaires</a>
-        <a href="#">Nouveautés</a>
-        <a href="#">Podcast</a>
-      </div>
-    </div>
-    <form action="/search" method="GET" role="search">
-  <label for="search" class="sr-only"></label>
-  <input id="search" name="q" type="search" placeholder="Recherche" aria-label="Recherche">
-  <button type="submit">Rechercher</button>
-</form>
-    </div>
-  </nav>
+    <nav>
+        <div class="nav-left container">
+            <div class="logo">EstiaFlix</div>
+            <div class="nav-links">
+                <a href="#">Accueil</a>
+                <a href="#">Journaux</a>
+                <a href="#">Documentaires</a>
+                <a href="#">Nouveautés</a>
+                <a href="#">Podcast</a>
+            </div>
+        </div>
+        <form action="/search" method="GET" role="search" class="search-form">
+            <label for="search" class="sr-only">Rechercher sur EstiaFlix</label>
+            <input id="search" name="q" type="search" placeholder="Recherche" aria-label="Recherche">
+            <button type="submit">Rechercher</button>
+        </form>
+    </nav>
 
     <section class="hero">
-      <div class="container hero-content">
-        <div class="kicker">Documentaires & Journaux</div>
-        <h1>Regardez ce soir — nouveautés et incontournables</h1>
-        <p class="lead">Quoi de neuf dans le monde. Découvrez Journaux, podcast et documentaires choisis spécialement pour vous.</p>
-        <div class="cta">
-          <button class="btn">Lecture</button>
-          <button class="btn secondary">Plus d'infos</button>
+        <div class="container hero-content">
+            <div class="kicker">Documentaires & Journaux</div>
+            <h1>Regardez ce soir — nouveautés et incontournables</h1>
+            <p class="lead">Quoi de neuf dans le monde. Découvrez Journaux, podcast et documentaires choisis spécialement pour vous.</p>
+            <div class="cta">
+                <button class="btn primary">Lecture</button>
+                <button class="btn secondary">Plus d'infos</button>
+            </div>
         </div>
-      </div>
     </section>
 
     <section class="rows container">
-      <div class="row">
-        <div class="row-title">Tendances actuellement</div>
-        <div class="row-track">
-       <div class="card"></div> <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=50&w=500"><div class="play-overlay"><div class="play-icon">▶</div></div></div>
-       <div class="card"></div><img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=50&w=500"><div class="play-overlay"><div class="play-icon">▶</div></div></div>
-       <div class="card"></div><img src="https://images.unsplash.com/photo-1615310126233-642c6a0df67a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=50&w=500"><div class="play-overlay"><div class="play-icon">▶</div></div></div>
+        <div class="row">
+            <h2 class="row-title">Tendances actuellement</h2>
+            <div class="row-track">
+                
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=50&w=500" alt="Image représentant le journalisme, un thème tendance.">
+                    <div class="play-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                    </article>
+                
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1478737270239-2f02b77fc618?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=50&w=500" alt="Image d'un micro pour un podcast ou une interview.">
+                    <div class="play-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </article>
+                
+                <article class="card">
+                    <img src="https://images.unsplash.com/photo-1615310126233-642c6a0df67a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dauto=format&fit=crop&q=50&w=500" alt="Photo d'un studio d'enregistrement de film/documentaire.">
+                    <div class="play-overlay">
+                        <div class="play-icon">▶</div>
+                    </div>
+                </article>
+                
+            </div>
         </div>
-      </div>
     </section>
+</body>
+</html>
