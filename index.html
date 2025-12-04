@@ -21,13 +21,14 @@
         <a href="#">Podcast</a>
       </div>
     </div>
-    <div class="nav-right container" style="justify-content:flex-end;">
-      <input aria-label="Recherche" placeholder="Recherche">
-      <div class="profile"></div>
+    <form action="/search" method="GET" role="search">
+  <label for="search" class="sr-only">Recherche</label>
+  <input id="search" name="q" type="search" placeholder="Recherche" aria-label="Recherche">
+  <button type="submit">Rechercher</button>
+</form>
     </div>
   </nav>
 
-  <main style="padding-top:68px">
     <section class="hero">
       <div class="container hero-content">
         <div class="kicker">SÉRIES & FILMS</div>
