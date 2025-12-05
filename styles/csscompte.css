@@ -1,0 +1,74 @@
+
+:root {
+  --bg:#141414;
+  --card:#1f1f1f;
+  --accent:#0965e5;
+  --muted:#b3b3b3;
+  --maxw:1200px;
+}
+
+html, body {
+  margin:0;
+  background:var(--bg);
+  font-family:Montserrat, system-ui, Arial;
+  color:#fff;
+}
+
+.container {
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding:0 20px;
+}
+
+nav {
+  position:fixed;
+  top:0; left:0; right:0;
+  height:68px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:0 30px;
+  backdrop-filter:blur(6px);
+  z-index:40;
+}
+.nav-left { display:flex; align-items:center; gap:24px; }
+.logo { font-weight:700; color:var(--accent); font-size:22px; }
+.nav-links a { color:#fff; text-decoration:none; margin-right:16px; font-weight:500; }
+
+
+.account {
+  padding-top: 100px;
+}
+
+.account h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.buttons-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.account-btn {
+  background: var(--card);
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 50px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.account-btn:hover {
+  background: #2a2a2a;
+  transform: scale(1.05);
+}
+
