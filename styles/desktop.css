@@ -270,3 +270,199 @@ nav {
     border-radius: 3px;
     z-index: 5;
 }
+
+/* Ce code doit être dans le fichier connexion.css */
+
+/* --- Mise à Jour Flexbox pour l'Alignement --- */
+
+.info-ligne {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 0;
+}
+
+.etiquette {
+    /* ... styles ... */
+    flex-basis: 30%; 
+    flex-shrink: 0;
+}
+
+.valeur-conteneur {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-grow: 1; 
+}
+
+.valeur {
+    /* ... styles ... */
+    flex-grow: 1; 
+}
+
+/* --- Séparateurs --- */
+
+.separateur-bottom {
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Assurez-vous que tous les autres styles pour le thème sombre sont présents ici */
+/* --- Variables du Thème EstiaFlix (Assurez-vous qu'elles sont aussi dans desktop.css) --- */
+:root {
+    --color-dark: #141414;      /* Fond principal noir */
+    --color-text: #ffffff;      /* Texte blanc */
+    --color-accent: #0939e5;    /* Rouge vif (Netflix-like) */
+    --color-panel-bg: #222222;  /* Fond des panneaux (gris foncé) */
+    --color-border: #444444;    /* Lignes de séparation */
+    --color-secondary-btn: #555555; /* Boutons secondaires */
+}
+
+/* --- Styles de Base et Conteneurs --- */
+body {
+    background-color: var(--color-dark);
+    color: var(--color-text);
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+}
+
+.page-compte {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.titre-page {
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 10px;
+}
+
+/* --- En-tête --- */
+.compte-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: var(--color-dark);
+    border-bottom: 1px solid #333;
+}
+
+.compte-header .logo {
+    color: var(--color-accent);
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+
+/* --- Panneau d'Information --- */
+.panneau-info {
+    background-color: var(--color-panel-bg);
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 30px;
+}
+
+.sous-titre {
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--color-accent);
+    margin-bottom: 25px;
+}
+
+/* --- Mise en page des lignes d'information (Flexbox) --- */
+
+.info-ligne {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px 0;
+}
+
+.etiquette {
+    font-weight: 300;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    flex-basis: 30%; /* Laisse de la place à gauche */
+    flex-shrink: 0; 
+}
+
+.valeur-conteneur {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    flex-grow: 1; /* Prend tout l'espace restant pour aligner le bouton à droite */
+}
+
+.valeur {
+    font-weight: 500;
+    flex-grow: 1; 
+}
+
+/* --- Séparateurs --- */
+.separateur-bottom {
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* --- Styles des Boutons (Génériques ou à placer dans desktop.css) --- */
+
+button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-left: 15px; /* Ajoute de l'espace entre la valeur et le bouton */
+}
+
+.btn-secondary {
+    background-color: var(--color-secondary-btn);
+    color: var(--color-text);
+}
+
+.btn-secondary:hover {
+    background-color: #666666;
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+}
+
+.btn-primary:hover {
+    background-color:#0939e5;
+}
+
+.btn-deconnexion {
+    display: block;
+    width: 250px;
+    margin: 30px auto;
+    background-color: var(--color-secondary-btn);
+    color: var(--color-text);
+    font-size: 1.1em;
+    padding: 12px 20px;
+}
+
+.btn-deconnexion:hover {
+    background-color: var(--color-accent);
+}
+#Profil button {
+    background-color: blue;
+    color: white;
+}
