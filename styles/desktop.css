@@ -463,6 +463,20 @@ button {
     background-color: var(--color-accent);
 }
 #Profil button {
-    background-color: blue;
+    background-color: #0939e5;
     color: white;
+}
+
+
+/* Footer */
+
+#un {
+    background-color:#0939e5;
+    border-radius: 8px;
+}
+#nous_contacter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
 }
