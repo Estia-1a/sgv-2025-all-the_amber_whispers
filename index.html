@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/desktop.css">
 </head>
 <body>
-
+    <main>
     <nav>
         <div class="nav-left container">
             <div class="logo">EstiaFlix</div>
@@ -80,40 +80,54 @@
                     <div class="play-overlay"></div>
                     <span class="metadata-badge">42</span>
                 </article>
-
             </div>
         </div>
     </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container">
 
-    <footer>
-        <div id="un">
-            <div>
-                <!-- Corrige: pas de button dans un <a> -->
-                <a id="nous_contacter" href="https://validator.w3.org/nu/#textarea" class="btn">Nous contacter</a>
+            <!-- Contact -->
+            <div class="footer-section">
+                <a href="https://validator.w3.org/nu/#textarea" class="footer-btn">
+                    Nous contacter
+                </a>
             </div>
-            <div>
-                Suivez-nous: <a href=""><img src="media/pictures/Facebook-filaire.svg" alt="Facebook"></a>
-                <a href=""><img src="media/pictures/X-filaire.svg" alt="Twitter"></a>
+
+            <!-- Réseaux sociaux -->
+            <div class="footer-section footer-socials">
+                <span class="footer-label">Suivez-nous :</span>
+
+                <a href="#" aria-label="Facebook">
+                    <img src="media/pictures/Facebook-filaire.svg" alt="Facebook">
+                </a>
+
+                <a href="#" aria-label="X (Twitter)">
+                    <img src="media/pictures/X-filaire.svg" alt="X (Twitter)">
+                </a>
             </div>
-            <div>
-                <ul>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Centre d'aide</a></li>
-                    <li><a href="">Conditions d'utilisation</a></li>
-                    <li><a href="">Politique de confidentialité</a></li>
-                    <li><a href="">Préférences de cookies</a></li>
-                    <li><a href="">Mentions légales</a></li>
-                    <li><a href="">Nous contacter</a></li>
+
+            <!-- Liens -->
+            <nav class="footer-section" aria-label="Liens du pied de page">
+                <ul class="footer-links">
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Préférences de cookies</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Nous contacter</a></li>
                 </ul>
+            </nav>
+
+            <!-- Mentions -->
+            <div class="footer-section footer-legal">
+                <p>EstiaFlix France</p>
+                <p>© 2024 EstiaFlix, Inc.</p>
             </div>
-            <div>
-                <ul>
-                    <li>EstiaFlix France</li>
-                    <li>© 2024 EstiaFlix, Inc.</li>
-                </ul>
-            </div>
+
         </div>
-    </footer>
+        </footer>
 
 </body>
 </html>

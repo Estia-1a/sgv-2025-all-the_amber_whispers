@@ -397,99 +397,114 @@ body {
     color: var(--color-accent);
     margin-bottom: 25px;
 }
-
-/* --- Mise en page des lignes d'information (Flexbox) --- */
-
-.info-ligne {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    padding: 15px 0;
+/* Footer principal */
+.footer {
+    background-color: #0f0f0f;
+    color: #fff;
+    padding: 40px 20px;
+    font-size: 14px;
+    border-top: 2px solid #0939e5;
 }
 
-.etiquette {
-    font-weight: 300;
-    color: #aaaaaa;
-    text-transform: uppercase;
-    flex-basis: 30%; /* Laisse de la place à gauche */
-    flex-shrink: 0; 
+/* Conteneur des sections */
+.footer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    align-items: start;
 }
 
-.valeur-conteneur {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    flex-grow: 1; /* Prend tout l'espace restant pour aligner le bouton à droite */
-}
-
-.valeur {
-    font-weight: 500;
-    flex-grow: 1; 
-}
-
-/* --- Séparateurs --- */
-.separateur-bottom {
-    border-bottom: 1px solid var(--color-border);
-}
-
-/* --- Styles des Boutons (Génériques ou à placer dans desktop.css) --- */
-
-button {
-    padding: 8px 15px;
-    border: none;
-    border-radius: 4px;
-    font-weight: 500;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    margin-left: 15px; /* Ajoute de l'espace entre la valeur et le bouton */
-}
-
-.btn-secondary {
-    background-color: var(--color-secondary-btn);
-    color: var(--color-text);
-}
-
-.btn-secondary:hover {
-    background-color: #666666;
-}
-
-.btn-primary {
-    background-color: var(--color-accent);
-    color: var(--color-text);
-}
-
-.btn-primary:hover {
-    background-color:#0939e5;
-}
-
-.btn-deconnexion {
-    display: block;
-    width: 250px;
-    margin: 30px auto;
-    background-color: var(--color-secondary-btn);
-    color: var(--color-text);
-    font-size: 1.1em;
-    padding: 12px 20px;
-}
-
-.btn-deconnexion:hover {
-    background-color: var(--color-accent);
-}
-#Profil button {
-    background-color: #0939e5;
-    color: white;
-}
-
-
-/* Footer */
-
-#un {
-    background-color:#0939e5;
+/* Bouton de contact */
+.footer-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background-color: #0b3df0;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
     border-radius: 8px;
+    transition: all 0.2s ease;
 }
-#nous_contacter{
+
+.footer-btn:hover {
+    background-color: #092fc0;
+    transform: translateY(-2px);
+}
+
+/* Réseaux sociaux */
+.footer-socials {
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-top: auto;
+    gap: 10px;
+}
+
+.footer-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: #1a1a1a;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+
+.footer-socials a:hover {
+    background-color: #0939e5;
+}
+
+.footer-socials img {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
+/* Liens du footer */
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #cfcfcf;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+/* Mentions légales */
+.footer-legal p {
+    margin: 6px 0;
+    color: #888;
+    font-size: 13px;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .footer-socials {
+        justify-content: flex-start;
+    }
+}
+
+footer nav,
+footer .footer-links,
+footer .footer-section {
+    position: static !important;
+    float: none !important;
 }
