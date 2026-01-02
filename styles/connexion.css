@@ -1,103 +1,114 @@
+/* ===============================
+   ESTIAFLIX – PAGE CONNEXION
+   =============================== */
 
-/* Réglages de base */
-* { box-sizing: border-box; }
-html, body { height: 100%; }
-body {
+:root {
+  --bg-main: #141414;
+  --bg-card: #1f1f1f;
+  --bg-hover: #2a2a2a;
+  --accent: #0939e5;
+  --text-main: #ffffff;
+  --text-muted: #b3b3b3;
+  --radius: 14px;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  color: #111;
-  background: #fff;
+  padding: 0;
 }
 
-/* En-tête : bouton "Votre compte" */
-.entete {
-  position: relative;
-  padding: 16px;
+html, body {
+  height: 100%;
 }
-.bouton-compte {
-  position: absolute;
-  right: 16px;
-  top: 16px;
-  display: inline-flex;
+
+body {
+  background: var(--bg-main);      /* FOND NOIR */
+  color: var(--text-main);
+  font-family: 'Montserrat', system-ui, sans-serif;
+
+  /* centrage vertical */
+  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 8px;
-  text-decoration: none;
-  color: #000;
-  border: 2px solid #000;
-  padding: 6px 10px;
-  background: #f6f6f6;
-}
-.avatar {
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
-  text-align: center;
-  border: 2px solid #000;
-  background: #fff;
-  font-size: 16px;
 }
 
-/* Contenu */
+/* ===============================
+   CONTENEUR GLOBAL
+   =============================== */
 .page {
-  max-width: 640px;
-  margin: 0 auto;
-  padding: 8px 24px 32px;
+  width: 100%;
+  max-width: 420px;
+  padding: 0 24px;
 }
+
+/* ===============================
+   TITRE AU-DESSUS
+   =============================== */
 .titre {
   text-align: center;
-  font-size: 22px;
+  font-size: 32px;
   font-weight: 700;
-  margin: 12px 0 24px;
+  margin-bottom: 32px;
 }
 
-/* Panneau principal */
+/* ===============================
+   PANNEAU (RECTANGLE NOIR)
+   =============================== */
 .panneau {
-  border: 2px solid #000;
-  padding: 12px 12px 6px;
+  background: var(--bg-card);      /* RECTANGLE NOIR */
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
 }
 
+/* ===============================
+   LIGNES
+   =============================== */
 .ligne {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
 }
 
 .etiquette {
-  font-weight: 800;
-  font-size: 20px;
-}
-
-.modifier {
-  border: 2px solid #000;
-  background: #eaeaea;
-  color: #000;
-  padding: 6px 12px;
   font-size: 14px;
-  cursor: pointer;
-}
-.modifier.petit {
-  padding: 4px 10px;
-  font-size: 13px;
+  color: var(--text-muted);
+  margin-bottom: 6px;
 }
 
 .valeur {
-  color: #333;
-  margin: 4px 0 10px;
-  padding-left: 4px;
-  font-size: 14px;
+  font-size: 15px;
+  color: var(--text-main);
 }
 
-hr {
+/* ===============================
+   BOUTONS
+   =============================== */
+.modifier {
+  margin-top: 12px;
+  background: var(--bg-hover);
+  color: var(--text-main);
   border: none;
-  border-top: 2px solid #000;
-  margin: 8px 0;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease;
 }
 
-/* Mobile */
+.modifier:hover {
+  background: var(--accent);
+  transform: scale(1.03);
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
 @media (max-width: 480px) {
-  .page { padding: 8px 16px 24px; }
-  .etiquette { font-size: 18px; }
-  .modifier { font-size: 13px; padding: 5px 10px; }
+  .titre {
+    font-size: 26px;
+  }
 }
