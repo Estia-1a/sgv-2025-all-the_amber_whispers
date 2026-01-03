@@ -1,72 +1,111 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Informations personnelles — EstiaFlix</title>
 
-  <title>Accueil — EstiaFlix</title>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS global si tu l’utilises déjà -->
+  <link rel="stylesheet" href="styles/desktop.css">
+
+  <!-- CSS spécifique infos -->
   <link rel="stylesheet" href="../styles/connexion.css">
-</head>      
+</head>
+
 <body>
-  <header class="entete">
-    #
-      <span class="avatar" aria-hidden="true">☺</span>
-      <span>Votre compte</span>
-    </a>
-  </header>
 
-  <main class="page">
-    <h1 class="titre">Connexion</h1>
+  <!-- NAVBAR -->
+  <nav class="topbar">
+    <div class="nav-left container">
+      <a class="logo" href="Profil.html">EstiaFlix</a>
 
-    <section class="panneau">
-      <div class="ligne">
-        <div class="etiquette">NOM</div>
-        <button class="modifier">Modifier</button>
+      <div class="nav-links">
+        <a href="index.html">Accueil</a>
+        <a href="#">Journaux</a>
+        <a href="#">Documentaires</a>
+        <a href="#">Nouveautés</a>
+        <a href="#">Podcast</a>
       </div>
-      <div class="valeur">Junior</div>
+    </div>
 
-      <hr />
+    <div class="nav-right">
+      <span class="btn-vous btn-vous-disabled" aria-disabled="true">
+        👤 <span>vous</span>
+      </span>
+    </div>
+  </nav>
 
-      <div class="ligne">
-        <div class="etiquette">Prénom</div>
-        <button class="modifier">Modifier</button>
+  <!-- CONTENU -->
+  <main class="infos container">
+    <h1 class="page-title">Informations personnelles</h1>
+    <div class="sep"></div>
+
+    <section class="panel">
+      <h2 class="panel-title">Votre identité</h2>
+
+      <div class="row">
+        <div class="label">Nom</div>
+        <div class="value">Junior</div>
+        <button class="btn-action" type="button">Modifier</button>
       </div>
-      <div class="valeur">Neymar</div>
 
-      <hr />
-
-      <div class="ligne">
-        <div class="etiquette">E‑Mail</div>
-        <button class="modifier">Modifier</button>
+      <div class="row">
+        <div class="label">Prénom</div>
+        <div class="value">Neymar</div>
+        <button class="btn-action" type="button">Modifier</button>
       </div>
-      <div class="valeur">Neymar.Jr@estia.fr</div>
 
-      <hr />
-
-      <div class="ligne">
-        <div class="etiquette">Numéro de tel principal</div>
-        <button class="modifier">Modifier</button>
+      <div class="row row-last">
+        <div class="label">Date de naissance</div>
+        <div class="value">01/01/2000</div>
+        <button class="btn-action" type="button">Modifier</button>
       </div>
-      <div class="valeur">0611101420</div>
-
-      <hr />
-
-      <div class="ligne">
-        <div class="etiquette">Clé d'Access</div>
-        <button class="modifier petit">configure</button>
-      </div>
-      <div class="valeur">**********</div>
-
-      <hr />
-
-      <div class="ligne">
-        <div class="etiquette">Mot de passes</div>
-        <button class="modifier">Modifier</button>
-      </div>
-      <div class="valeur">**********</div>
     </section>
+
+    <section class="panel">
+      <h2 class="panel-title">Coordonnées</h2>
+
+      <div class="row">
+        <div class="label">E-mail</div>
+        <div class="value">neymar.jr@estia.fr</div>
+        <button class="btn-action" type="button">Modifier</button>
+      </div>
+
+      <div class="row">
+        <div class="label">Téléphone</div>
+        <div class="value">06 11 10 14 20</div>
+        <button class="btn-action" type="button">Modifier</button>
+      </div>
+
+      <div class="row row-last">
+        <div class="label">Adresse</div>
+        <div class="value">12 rue Exemple, 64000 Pau</div>
+        <button class="btn-action" type="button">Modifier</button>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2 class="panel-title">Confidentialité</h2>
+
+      <div class="row">
+        <div class="label">Compte</div>
+        <div class="value">
+          <span class="badge badge-on">Actif</span>
+        </div>
+        <button class="btn-action" type="button">Gérer</button>
+      </div>
+
+      <div class="row row-last">
+        <div class="label">Newsletter</div>
+        <div class="value">Inscrit</div>
+        <button class="btn-action" type="button">Modifier</button>
+      </div>
+    </section>
+
+    <a class="btn-back" href="Profil.html">← Retour au profil</a>
   </main>
-</body>
 
 </body>
+</html>

@@ -1,114 +1,176 @@
-/* ===============================
-   ESTIAFLIX – PAGE CONNEXION
-   =============================== */
-
-:root {
-  --bg-main: #141414;
-  --bg-card: #1f1f1f;
-  --bg-hover: #2a2a2a;
-  --accent: #0939e5;
-  --text-main: #ffffff;
-  --text-muted: #b3b3b3;
-  --radius: 14px;
+:root{
+  --bg:#141414;
+  --panel:#232323;
+  --line:#3b3b3b;
+  --text:#ffffff;
+  --muted:#b3b3b3;
+  --accent:#0939e5;
+  --btn:#4a4a4a;
+  --btnHover:#5a5a5a;
 }
 
-/* Reset */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+*{ box-sizing:border-box; }
 
-html, body {
-  height: 100%;
-}
-
-body {
-  background: var(--bg-main);      /* FOND NOIR */
-  color: var(--text-main);
+body{
+  margin:0;
   font-family: 'Montserrat', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
 
-  /* centrage vertical */
-  display: flex;
-  justify-content: center;
+.container{
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* NAVBAR (même style) */
+.topbar{
+  position: fixed;
+  top:0; left:0; right:0;
+  height:72px;
+  display:flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 32px;
+  background: rgba(0,0,0,0.85);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
 }
 
-/* ===============================
-   CONTENEUR GLOBAL
-   =============================== */
-.page {
-  width: 100%;
-  max-width: 420px;
-  padding: 0 24px;
-}
-
-/* ===============================
-   TITRE AU-DESSUS
-   =============================== */
-.titre {
-  text-align: center;
-  font-size: 32px;
+.logo{
+  color: var(--accent);
   font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+}
+.logo:hover{ opacity: .9; text-decoration:none; }
+
+.nav-left{ display:flex; align-items:center; gap:32px; }
+.nav-links a{
+  color: var(--text);
+  text-decoration:none;
+  font-weight: 500;
+  opacity: .9;
+  margin-right: 18px;
+}
+.nav-links a:hover{ opacity: 1; }
+
+.nav-right{ display:flex; align-items:center; }
+.btn-vous{
+  background: var(--accent);
+  color: var(--text);
+  text-decoration:none;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+}
+.btn-vous span{ opacity:.9; }
+.btn-vous-disabled{ pointer-events:none; opacity:.7; cursor:default; }
+
+/* CONTENU */
+.infos{
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.page-title{
+  font-size: 52px;
+  font-weight: 700;
+  margin: 0 0 18px 0;
+}
+
+.sep{
+  height: 2px;
+  background: var(--line);
+  width: 100%;
   margin-bottom: 32px;
 }
 
-/* ===============================
-   PANNEAU (RECTANGLE NOIR)
-   =============================== */
-.panneau {
-  background: var(--bg-card);      /* RECTANGLE NOIR */
-  border-radius: var(--radius);
-  padding: 32px;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+/* PANNEAUX */
+.panel{
+  background: var(--panel);
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.55);
+  margin-bottom: 24px;
 }
 
-/* ===============================
-   LIGNES
-   =============================== */
-.ligne {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 16px;
+.panel-title{
+  margin: 0 0 18px 0;
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--accent);
 }
 
-.etiquette {
-  font-size: 14px;
-  color: var(--text-muted);
-  margin-bottom: 6px;
+/* LIGNES */
+.row{
+  display:grid;
+  grid-template-columns: 240px 1fr 140px;
+  align-items:center;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--line);
 }
+.row-last{ border-bottom: 1px solid var(--line); }
 
-.valeur {
-  font-size: 15px;
-  color: var(--text-main);
-}
-
-/* ===============================
-   BOUTONS
-   =============================== */
-.modifier {
-  margin-top: 12px;
-  background: var(--bg-hover);
-  color: var(--text-main);
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  font-size: 14px;
+.label{
+  color: var(--muted);
   font-weight: 600;
-  cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease;
+  font-size: 14px;
 }
 
-.modifier:hover {
+.value{
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* Badges */
+.badge{
+  display:inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 800;
+}
+.badge-on{
   background: var(--accent);
-  transform: scale(1.03);
+  color: #fff;
 }
 
-/* ===============================
-   RESPONSIVE
-   =============================== */
-@media (max-width: 480px) {
-  .titre {
-    font-size: 26px;
-  }
+/* Boutons */
+.btn-action{
+  justify-self:end;
+  background: var(--btn);
+  color: var(--text);
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 800;
+}
+.btn-action:hover{ background: var(--btnHover); }
+
+/* Retour */
+.btn-back{
+  display: inline-block;
+  margin-top: 10px;
+  color: var(--text);
+  text-decoration: none;
+  opacity: .9;
+  font-weight: 700;
+}
+.btn-back:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 900px){
+  .page-title{ font-size: 38px; }
+  .row{ grid-template-columns: 1fr; }
+  .btn-action{ justify-self: start; }
 }

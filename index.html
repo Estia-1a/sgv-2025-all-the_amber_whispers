@@ -7,7 +7,7 @@
     <title>Accueil — EstiaFlix</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/desktop.css">
-    <link rel="stylesheet" href="../styles/desktop.css">
+    
 </head>
 <body>
     <main>
@@ -34,17 +34,37 @@
     </nav>
 
     <section class="hero">
-        <div class="container hero-content">
-            <div class="kicker">Documentaires &amp; Journaux</div>
-            <h1>Regardez ce soir — nouveautés et incontournables</h1>
-            <p class="lead">Quoi de neuf dans le monde. Découvrez Journaux, podcast et documentaires choisis spécialement pour vous.</p>
-            <div class="cta">
-                <button class="btn primary">Lecture</button>
-                <button class="btn secondary">Plus d'infos</button>
-            </div>
-        </div>
-    </section>
+        <section class="hero">
+  <!-- SLIDER EN ARRIÈRE-PLAN -->
+  <div class="hero-slider">
+    <div class="hero-track">
+      <img src="media/pictures/image-1.jpeg" alt="">
+      <img src="media/pictures/image2.png" alt="">
+      <img src="media/pictures/image3.png" alt="">
+      <img src="media/pictures/image4.png" alt="">
 
+      <!-- duplication pour boucle fluide -->
+    <img src="media/pictures/image-1.jpeg" alt="">
+      <img src="media/pictures/image2.png alt="">
+      <img src="media/pictures/image3.png" alt="">
+      <img src="media/pictures/image4.png" alt="">
+    </div>
+  </div>
+
+  <!-- CONTENU HERO (AU-DESSUS) -->
+  <div class="container hero-content">
+    <div class="kicker">Documentaires &amp; Journaux</div>
+    <h1>Regardez ce soir — nouveautés et incontournables</h1>
+    <p class="lead">
+      Quoi de neuf dans le monde. Découvrez Journaux, podcast et documentaires
+      choisis spécialement pour vous.
+    </p>
+    <div class="cta">
+      <button class="btn primary">Lecture</button>
+      <button class="btn secondary">Plus d'infos</button>
+    </div>
+  </div>
+</section>
     <section class="rows container">
         <div class="row">
             <h2 class="row-title">Tendances actuellement</h2>
@@ -89,7 +109,7 @@
 
             <!-- Contact -->
             <div class="footer-section">
-                <a href="https://validator.w3.org/nu/#textarea" class="footer-btn">
+                <a class="footer-btn">
                     Nous contacter
                 </a>
             </div>
@@ -123,7 +143,7 @@
             <!-- Mentions -->
             <div class="footer-section footer-legal">
                 <p>EstiaFlix France</p>
-                <p>© 2024 EstiaFlix, Inc.</p>
+                <p>© 2026 EstiaFlix, Inc.</p>
             </div>
 
         </div>

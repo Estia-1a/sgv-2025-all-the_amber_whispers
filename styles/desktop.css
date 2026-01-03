@@ -55,6 +55,7 @@ nav {
     font-weight: 700;
     color: var(--color-accent); /* Logo en rouge vif */
     margin-right: 30px;
+    text-decoration: none;
 }
 
 .nav-links a {
@@ -94,16 +95,63 @@ nav {
     border-radius: 4px;
     cursor: pointer;
     font-weight: 500;
+    text-decoration: none;
 }
 
 /* --- Hero Section (Bannière Principale) --- */
 
-.hero {
-    background: url('URL_DE_VOTRE_IMAGE_DE_FOND_HERO') no-repeat center center/cover;
-    height: 90vh; /* Grande taille */
-    display: flex;
-    align-items: center;
-    position: relative;
+/* ===== HERO SLIDER EN FOND ===== */
+
+.hero{
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  ;
+}
+
+/* slider derrière */
+.hero-slider{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+/* piste (8 images => 800vw) */
+.hero-track{width: 600vw;
+  display: flex;
+  height: 100%;
+  width: 800vw;
+  animation: heroScroll 35s linear infinite;
+  will-change: transform;
+}
+
+.hero-track img{
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  flex: 0 0 auto;
+}
+
+/* filtre sombre pour lire le texte */
+.hero::after{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 2;
+}
+
+/* contenu devant */
+.hero-content{
+  position: relative;
+  z-index: 3;
+}
+
+/* animation */
+@keyframes heroScroll{
+  0%{ transform: translateX(0); }
+  100%{ transform: translateX(-400vw); } /* on défile la moitié (4 images) */
 }
 
 .hero::after {
