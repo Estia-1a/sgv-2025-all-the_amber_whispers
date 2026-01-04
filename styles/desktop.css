@@ -514,6 +514,7 @@ body {
     list-style: none;
     padding: 0;
     margin: 0;
+    background-color: #000000
 }
 
 .footer-links li {
@@ -555,4 +556,5 @@ footer .footer-links,
 footer .footer-section {
     position: static !important;
     float: none !important;
+    background-color: #0f0f0f;
 }

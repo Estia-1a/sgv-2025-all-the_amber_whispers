@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Paramètres de sécurité — EstiaFlix</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <!-- CSS global (nav/accueil si tu l’utilises déjà) -->
   <link rel="stylesheet" href="styles/desktop.css">
-
-  <!-- CSS spécifique sécurité -->
-  <link rel="stylesheet" href="../styles/cssparametre et securite.css">
+  <link rel="stylesheet" href="../styles/cssparametre%20et%20securite.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
   <nav class="topbar">
     <div class="nav-left container">
       <a class="logo" href="Profil.html">EstiaFlix</a>
@@ -32,17 +28,15 @@
 
     <div class="nav-right">
       <span class="btn-vous btn-vous-disabled" aria-disabled="true">
-        👤 <span>vous</span>
+        <span aria-hidden="true">👤</span> <span>vous</span>
       </span>
     </div>
   </nav>
 
-  <!-- CONTENU -->
   <main class="securite container">
     <h1 class="page-title">Paramètres de sécurité</h1>
     <div class="sep"></div>
 
-    <!-- PANNEAU 1 : Mot de passe -->
     <section class="panel">
       <h2 class="panel-title">Mot de passe</h2>
 
@@ -59,7 +53,6 @@
       </div>
     </section>
 
-    <!-- PANNEAU 2 : 2FA -->
     <section class="panel">
       <h2 class="panel-title">Authentification à deux facteurs (2FA)</h2>
 
@@ -78,9 +71,8 @@
       </div>
     </section>
 
-    <!-- PANNEAU 3 : Sessions -->
     <section class="panel">
-      <h2 class="panel-title">Appareils & sessions</h2>
+      <h2 class="panel-title">Appareils &amp; sessions</h2>
 
       <div class="row">
         <div class="label">Session actuelle</div>
@@ -101,7 +93,6 @@
       </div>
     </section>
 
-    <!-- Bouton retour profil -->
     <a class="btn-back" href="Profil.html">← Retour au profil</a>
   </main>
 

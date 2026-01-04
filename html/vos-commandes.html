@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vos commandes — EstiaFlix</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <!-- CSS global si tu l'utilises déjà -->
   <link rel="stylesheet" href="styles/desktop.css">
-
-  <!-- CSS spécifique commandes -->
-  <link rel="stylesheet" href="../styles/cssvos commandes.css">
+  <link rel="stylesheet" href="../styles/cssvos%20commandes.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
   <nav class="topbar">
     <div class="nav-left container">
       <a class="logo" href="Profil.html">EstiaFlix</a>
@@ -32,17 +28,16 @@
 
     <div class="nav-right">
       <span class="btn-vous btn-vous-disabled" aria-disabled="true">
-        👤 <span>vous</span>
+        <span aria-hidden="true">👤</span>
+        <span>Vous</span>
       </span>
     </div>
   </nav>
 
-  <!-- CONTENU -->
   <main class="commandes container">
     <h1 class="page-title">Vos commandes</h1>
     <div class="sep"></div>
 
-    <!-- Filtres -->
     <section class="panel">
       <h2 class="panel-title">Historique</h2>
 
@@ -55,12 +50,12 @@
         <div class="spacer"></div>
 
         <label class="sr-only" for="q">Rechercher</label>
-        <input id="q" class="search" type="search" placeholder="Rechercher une commande…" />
+        <input id="q" class="search" type="search" placeholder="Rechercher une commande…">
       </div>
     </section>
 
-    <!-- Commande 1 -->
-    <section class="order">
+    <!-- COMMANDE 1 -->
+    <section class="order" aria-label="Commande EF-10482">
       <div class="order-head">
         <div>
           <div class="order-id">Commande #EF-10482</div>
@@ -73,34 +68,34 @@
         </div>
       </div>
 
-      <div class="order-body">
-        <article class="item">
+      <ul class="order-body">
+        <li class="item">
           <div class="thumb" aria-hidden="true">🎬</div>
           <div class="item-info">
             <div class="item-title">Pack Premium 1 mois</div>
             <div class="item-desc">Accès illimité • UHD • 4 écrans</div>
           </div>
           <div class="price">9,99€</div>
-        </article>
+        </li>
 
-        <article class="item">
+        <li class="item">
           <div class="thumb" aria-hidden="true">🎧</div>
           <div class="item-info">
             <div class="item-title">Podcast exclusif</div>
             <div class="item-desc">Saison 2 • 10 épisodes</div>
           </div>
           <div class="price">4,99€</div>
-        </article>
+        </li>
 
-        <article class="item">
+        <li class="item">
           <div class="thumb" aria-hidden="true">📰</div>
           <div class="item-info">
             <div class="item-title">Journal hebdo</div>
             <div class="item-desc">Accès 30 jours</div>
           </div>
           <div class="price">2,99€</div>
-        </article>
-      </div>
+        </li>
+      </ul>
 
       <div class="order-foot">
         <div class="total">Total : <strong>17,97€</strong></div>
@@ -111,8 +106,8 @@
       </div>
     </section>
 
-    <!-- Commande 2 -->
-    <section class="order">
+    <!-- COMMANDE 2 -->
+    <section class="order" aria-label="Commande EF-10513">
       <div class="order-head">
         <div>
           <div class="order-id">Commande #EF-10513</div>
@@ -125,16 +120,16 @@
         </div>
       </div>
 
-      <div class="order-body">
-        <article class="item">
+      <ul class="order-body">
+        <li class="item">
           <div class="thumb" aria-hidden="true">🎬</div>
           <div class="item-info">
             <div class="item-title">Pack Standard 1 mois</div>
             <div class="item-desc">HD • 2 écrans</div>
           </div>
           <div class="price">7,99€</div>
-        </article>
-      </div>
+        </li>
+      </ul>
 
       <div class="order-foot">
         <div class="total">Total : <strong>7,99€</strong></div>
